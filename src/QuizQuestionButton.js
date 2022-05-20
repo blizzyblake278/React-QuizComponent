@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class QuizQuestionButton{
     render(){
         <li>
-           <button type="button">button_text</button> 
+           <button>{this.props.button_text}</button> 
         </li>
     }
 }
