@@ -7,7 +7,7 @@ class QuizQuestion extends Component {
             this.props.showNextQuestionHandler()
         }
     }
-  
+
     render() {
 
         return (
@@ -21,8 +21,8 @@ class QuizQuestion extends Component {
                     the answer_option and index as local variables*/}
                     <ul>
                         {this.props.quiz_question.answer_options.map((answer_option, index) => {
-                            return <QuizQuestionButton key={index} button_text={answer_option} />
-                        }, onClick(this.handleClick.bind(this)))}
+                            return <QuizQuestionButton key={index} button_text={answer_option} clickHandler={this.handleClick.bind(this)} />
+                        })}
 
                     </ul>
                 </section>
