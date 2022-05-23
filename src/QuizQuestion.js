@@ -20,8 +20,8 @@ class QuizQuestion extends Component {
                     {/*itterates through each of the ?'s properties (answer options) by using a map that captures 
                     the answer_option and index as local variables*/}
                     <ul>
-                        {this.props.quiz_question.answer_options.map((answer_options, index) => {
-                            return <QuizQuestionButton key={index} button_text={answer_options} />
+                        {this.props.quiz_question.answer_options.map((answer_option, index) => {
+                            return <QuizQuestionButton key={index} button_text={answer_option} />
                         }, onClick(this.handleClick.bind(this)))}
 
                     </ul>
