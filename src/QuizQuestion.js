@@ -5,13 +5,14 @@ class QuizQuestion extends Component {
     handleClick(buttonText) {
         if (buttonText == this.props.quiz_question.answer) {
             this.props.showNextQuestionHandler()
+            this.setState(incorrectAnswer ? false : true)
+
         }
-       this.setState(incorrectAnswer? false : true)
     }
 
-    constructor(props){
+    constructor(props) {
         super(props)
-        this.state == incorrectAnswer(this.props.incorrectAnswer(false))
+        this.state == { incorrectAnswer: false }
     }
 
     render() {
