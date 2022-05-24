@@ -11,7 +11,7 @@ class QuizQuestion extends Component {
 
     constructor(props){
         super(props)
-        //this.state == incorrectAnswer(this.props.incorrectAnswer(false))
+        this.state == incorrectAnswer(this.props.incorrectAnswer(false))
     }
 
     render() {
